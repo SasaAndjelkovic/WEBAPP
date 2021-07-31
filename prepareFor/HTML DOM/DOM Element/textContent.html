@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button get the text content of the button element.</p>
+
+<button onclick="myFunction()" id="myBtn">Try it</button>
+
+<p id="demo"></p>
+
+<p id="demo2" onclick="myFunction2()">Click me to change my textual content.</p>
+
+<script>
+function myFunction() {
+     var x = document.getElementById("myBtn").textContent;
+  // var x = document.getElementById("myBtn").innerHTML;
+     document.getElementById("demo").innerHTML = x; 
+  // document.getElementById("demo").innerHTML = document.getElementById("myBtn").textContent;
+
+}
+
+function myFunction2() {
+    document.getElementById("demo2").textContent = "Paragraph changed!";
+  //document.getElementById("demo2").innerHTML = "Paragraph changed!";
+}
+
+
+</script>
+
+
+
+</body>
+</html>

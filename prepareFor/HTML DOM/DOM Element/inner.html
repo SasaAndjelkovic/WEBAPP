@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo" onclick="myFunction()">Click me to change my HTML content (innerHTML).</p>
+
+<p id="demo2">Click the button to delete my HTML content (innerHTML).</p>
+
+<button onclick="myFunction2()">Try it</button>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed!";
+}
+
+function myFunction2() {
+  document.getElementById("demo2").innerHTML = "";
+}
+</script>
+
+</body>
+</html> 

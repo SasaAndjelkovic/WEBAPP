@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to make a BUTTON element.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  var btn = document.createElement("BUTTON");     // Create a <button> element
+  var para = document.createElement("P");
+  btn.innerHTML = "CLICK ME";                     // Insert text
+  para.innerText = "This is a paragraph."; 
+  document.body.appendChild(btn);                 // Append <button> to <body>
+  document.body.appendChild(para);  
+}
+</script>
+
+</body>
+</html>

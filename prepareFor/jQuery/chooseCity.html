@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Izvršavanje funckije Change Event u jQuery-u</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("select").change(function(){
+        // change()	jQuery Event Methods         Attaches/Triggers the change event
+        var selectedOption = $(this).find(":selected").val();
+        // find()	jQuery Traversing Methods    Returns descendant elements of the selected element
+        // val()	jQuery HTML / CSS Methods    Sets or returns the value attribute of the selected elements (for form elements)
+        alert("Odabrali ste grad - " + selectedOption);
+    });
+});
+</script>
+</head>
+<body>
+    <form>
+        <label>Odaberi grad:</label>
+        <select>
+            <option>London</option>
+            <option>Pariz</option>
+            <option>New York</option>
+        </select>
+    </form>
+  <p><strong>Napomena:</strong> Selektuj bilo koju vrijednost u padajućoj listi da biste vidjeli rezultat.</p>
+</body>
+</html>

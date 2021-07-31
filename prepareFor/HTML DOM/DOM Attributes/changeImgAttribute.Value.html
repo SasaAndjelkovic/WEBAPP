@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img src="pic_bulboff.gif" width="100" height="180">
+
+<p>Click the button to change the src attribute's value of the image above.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByTagName("IMG")[0];
+  x.getAttributeNode("src").value = "pic_bulbon.gif";
+}
+</script>
+
+</body>
+</html>
