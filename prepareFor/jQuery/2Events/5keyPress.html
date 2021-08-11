@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Izvršavanje funkcije Keypress Event u jQuery-u</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    p{
+        padding: 10px;
+        background: lightgreen;
+        display: none;
+    }
+    div{
+        margin: 20px 0;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    var i = 0;
+    $('input[type="text"]').keypress(function(){   // .keydown()
+        $("span").text(i += 1);
+        $("p").show().fadeOut();
+    });
+});
+</script>
+</head>
+<body>
+    <input type="text">
+    <div>Keypress: <span>0</span></div>
+    <div><strong>Napomena:</strong> Upišite nešto unutar input box-a da vidite rezultat.</div>
+    <p>Keypress je pokrenut.</p>
+</body>
+</html>

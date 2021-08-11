@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Prilagođeni selektor</title>
+<style>
+    /* Neki prilagođeni stil */
+    *{
+        padding: 5px;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    // Označite redove tabele koji se pojavljuju na neparnim mjestima
+    $("tr:odd").css("background", "yellow");
+  
+    // Označite redove tabele koji se pojavljuju na parnim mjestima
+    $("tr:even").css("background", "orange");
+  
+    // Istaknite element prvog paragrafa
+    $("p:first").css("background", "red");
+  
+    // Istaknite element zadnjeg paragrafa
+    $("p:last").css("background", "green");
+  
+    // Označi sve input elemente sa type text unutar forme
+    $("form :text").css("background", "purple");
+  
+    // Označi sve input elemente sa type password unutar forme
+    $("form :password").css("background", "blue");
+  
+    // Označi sve input elemente sa type submit unutar forme
+    $("form :submit").css("background", "violet");
+});
+</script>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Ime</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Miloš Mihaljica</td>
+                <td>milosmihaljica@mail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Marko Marković</td>
+                <td>markomarkovic@mail.com</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Ivana Jović</td>
+                <td>ivanajovic@mail.com</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Ovo je paragraf.</p>
+    <p>Ovo je drugi paragraf</p>
+    <p>Ovo je treći paragraf.</p>
+    <form>
+        <label>Ime: <input type="text"></label>
+        <label>Lozinka: <input type="password"></label>
+        <input type="submit" value="Prijavi se">
+    </form>
+</body>
+</html>

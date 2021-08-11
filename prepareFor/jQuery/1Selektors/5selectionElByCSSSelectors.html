@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Odabir elemenata pomoću CSS selektora</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    // Označite samo elemente paragrafa sa klasom mark
+    $("p.mark").css("background", "yellow");
+  
+    // Označi sam span elemente unutra elemenata sa atributom ID mark
+    $("#mark span").css("background", "yellow");
+  
+    // Označi elemente unutar ul elemenata
+    $("ul li").css("background", "red");
+  
+    // Označi li elemente samo unutar ul elemeta sa id oznakom mark
+    $("ul#mark li").css("background", "yellow");//yellow ce pregaziti red
+  
+    // Označi li elemente iunutar ul elementa sa klasom mark
+    $("ul.mark li").css("background", "green");
+  
+    // Označi sve elemente sa (target blank) oznakom
+    $('a[target="_blank"]').css("background", "yellow");
+});
+</script>
+</head>
+<body>
+    <p>Ovo je paragraf.</p>
+    <p class="mark">Ovo je drugi paragraf.</p>
+    <p>Ovo je treći paragraf.</p>
+    <ul>
+        <li>Prvi element liste.</li>
+        <li>Drugi element liste.</li>
+        <li>Treći element liste.</li>
+    </ul>
+    <ul id="mark">
+        <li>Prvi element liste</li>
+        <li>Drugi <span>element liste</span></li>
+        <li>Treći element liste.</li>
+    </ul>
+    <ul class="mark">
+        <li>Prvi element liste</li>
+        <li>Drugi element liste</li>
+        <li>Treći element liste</li>
+    </ul>
+    <p>Idi na sajt: <a href="https://www.ittutorijali.net/" target="_blank">Početna strana</a></p>
+</body>
+</html>

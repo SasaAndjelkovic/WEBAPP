@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Izvršavanje funkcije Blur Event u jQuery-u</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    label{
+        display: block;
+        margin: 5px 0;
+    }
+    label span{
+        display: none;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    $("input").blur(function(){
+        $(this).next("span").show().fadeOut("slow");
+    });
+});
+</script>
+</head>
+<body>
+    <form>
+        <label>Email: <input type="text"> <span>blur fire</span></label>
+        <label>Lozinka: <input type="password"> <span>blur fire</span></label>
+        <label><input type="submit" value="Prijavi se"> <span>blur fire</span></label>
+    </form>
+    <p><strong>Napomena:</strong> Klikni izvan forme ili pritisnite tipku "Tab" da uklonite fokus.</p>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Izvršavanje funkcije Scroll Event u jQuery-u</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    p{
+        width: 100%;
+        padding: 50px 0;
+        text-align: center;
+        font: bold 34px sans-serif;
+        background: #f0e68c;
+        position: fixed;
+        top: 50px;
+        display: none;
+    }
+    .dummy-content{
+        height: 600px;
+        font: 34px sans-serif;
+        text-align: center;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    $(window).scroll(function() {
+        $("p").show().fadeOut("slow");
+    });
+});
+</script> 
+</head> 
+<body>
+    <p>Dogodio se Scroll!</p>
+    <div class="dummy-content">Scroll da vidiš.</div>
+    <div class="dummy-content">Scroll da vidiš.</div>
+    <div class="dummy-content">Scroll da vidiš.</div>
+    <div class="dummy-content">Scroll da vidiš.</div>
+    <div class="dummy-content">Scroll da vidiš.</div>
+</body>
+</html>

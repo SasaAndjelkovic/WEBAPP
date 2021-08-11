@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Izvršavanje funkcije Double-click Event u jQuery-u</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    p{
+        padding: 20px;
+        font: 20px sans-serif;
+        background: khaki;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    $("p").dblclick(function(){
+        $(this).slideUp();
+    });
+});
+</script>
+</head>
+<body>
+    <p>Postavi kursor miša na paragraf.</p>
+    <p>Postavi kursor miša na paragraf.</p>
+    <p>Postavi kursor miša na paragraf.</p>
+</body>
+</html>

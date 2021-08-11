@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Izvršavanje funkcije Resize Event u jQuery-u</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    p{
+        padding: 20px;
+        font: 20px sans-serif;
+        background: #f0e68c;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    $(window).resize(function() {
+        $(window).bind("resize", function(){ 
+            $("p").text("Širina prozora: " + $(window).width() + ", " + "Visina prozora: " + $(window).height());
+        });
+    });
+});
+</script>
+</head> 
+<body>
+    <p>Otvorite izlaz na novoj kartici i povucite uglove da biste promijenili veličinu prozora pretraživača.</p>
+</body>
+</html>

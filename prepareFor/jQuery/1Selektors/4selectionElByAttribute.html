@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>jQuery Selektovanje elmenata na osnovu atributa</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+$(document).ready(function(){
+    // Istakni paragrafe elemenata
+    $('input[type="text"]').css("background", "yellow");
+});
+</script>
+</head>
+<body>
+    <form>
+        <label>Ime: <input type="text"></label>
+        <label>Lozinka: <input type="password"></label>
+        <input type="submit" value="Prijavi se">
+    </form>
+</body>

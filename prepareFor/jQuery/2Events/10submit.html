@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Izvršavanje funkcije Form Submit Event u jQuery</title>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<style>
+    .error{
+        color: red;
+    }
+</style>
+<script>
+$(document).ready(function(){
+    $("form").submit(function(event){
+        var regex = /^[a-zA-Z]+$/;
+        // To get a string contains only letters (both uppercase or lowercase) 
+        // we use a regular expression (/^[A-Za-z]+$/) which allows only letters
+        var currentValue = $("#firstName").val();
+        if(regex.test(currentValue) == false){
+            $("#result").html('<p class="error">Format nije validan!</p>').show().fadeOut(1000);
+            // Sprječavanje podnošenja obrasca
+            event.preventDefault();
+        }
+    });
+});
+</script>
+</head>
+<body>
+    <p><strong>Napomena:</strong> Ako pokušate poslati nevaljanu vrijednost. To će proizvesti grešku.</p>
+    <form action="/examples/html/action.php" method="post" id="users">
+        <label for="firstName">Ime:</label>
+        <input type="text" name="first-name" id="firstName">
+        <input type="submit" value="Pošalji">
+        <div id="result"></div>
+    </form>    
+</body>
+</html>
