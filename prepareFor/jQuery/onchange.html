@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Rukovanje događajem promjene</title>
+</head>
+<body>
+    <span>Status:</span>
+    <input type="radio" id="list" name="status">
+    <label for="list">List</label>
+    <input type="radio" id="card" name="status">
+    <label for="card">Card</label>
+    <p id="result"></p>
+
+    <script>
+
+        
+        let result = document.querySelector('#result');
+        document.body.addEventListener('change', function(e) {
+            let target = e.target;
+            var message = target.id = 'list' ? 'List':'Card'; 
+            result.textContent = message;
+        });
+        
+    </script>
+</body>
+</html>
