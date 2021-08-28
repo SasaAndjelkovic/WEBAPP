@@ -14,8 +14,8 @@ export const Body = () => {
 
     return (
         <>
-        <button onClick = {onClick}>Switch view</button>
-        {data.map((user) => selected ? <List user={user}/>:<Card user={user} />)}
+            <button onClick = {onClick}>Switch view</button>
+            {data.map((user) => selected ? <List user={user}/>:<Card user={user} />)}
         </>
     )
 
