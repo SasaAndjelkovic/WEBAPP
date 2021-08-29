@@ -1,9 +1,9 @@
 body {
-    background-color: #3399dd;
-    color: #7b8083;
+  background-color: #3499dd;
+  color: #7b8083;
   }
-  h1 {
-    font-size: 45px;
+h1 {
+  font-size: 45px;
 }
 form {
   background-color: white;
@@ -18,27 +18,28 @@ input {
   margin: 5px 20%;
 }
 .namePass {
-    text-align: center;
-    background-color: #edf0f1;
-    padding: 15px 0;
-    border-radius: 5px;
-    border: none;
-    font-size: 16px;
-  }
-  .login {
-    background-color: #3399dd;
-    padding: 15px 0;
-    border-radius: 5px;
-    border: none;
-color: white;
-cursor: pointer;
-font-size: 16px;
+  text-align: center;
+  background-color: #edf0f1;
+  padding: 15px 0;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+.login {
+  background-color: #3499dd;
+  padding: 15px 0;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
 }
 .reset {
-border: none;
-background-color: white;
-text-decoration: underline;
-margin: 15px 0 30px 0;
-cursor: pointer;
-font-size: 16px;
+  border: none;
+  color: #7b8083;
+  background-color: white;
+  text-decoration: underline;
+  margin: 15px 0 30px 0;
+  cursor: pointer;
+  font-size: 16px;
 }

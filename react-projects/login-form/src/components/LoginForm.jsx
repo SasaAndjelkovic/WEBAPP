@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import './LoginForm.css'
 
 const LoginForm = () => {
-  const [enteredUsername, setEnteredUsername] = useState("");
-  const [enteredPassword, setEnteredPassword] = useState("");
+  const [enteredUsername, setEnteredUsername] = useState('');
+  const [enteredPassword, setEnteredPassword] = useState('');
 
   const usernameChangeHandler = (event) => {
     setEnteredUsername(event.target.value);
@@ -30,37 +30,38 @@ const LoginForm = () => {
   }
 
   return (
-    <form className="container m-5-auto p-5 text-center bg-light w-25 card" >
-      <h1 className="pb-4">Login</h1>
-      <div className="mb-3">
-        {/* <label for="exampleInputEmail1" className="form-label">Email address</label> */}
+    <form>
+      <h1>Login</h1>
+      
         <input
           type="text"
-          className="form-control text-center"
+          className="namePass"
           id="exampleInputUsername1"
           placeholder="username"
           value={enteredUsername}
           onChange={usernameChangeHandler}
         />
-      </div>
-      <div className="mb-3">
-        {/* <label for="exampleInputPassword1" className="form-label">Password</label> */}
         <input
           type="password"
-          className="form-control text-center"
+          className="namePass"
           id="exampleInputPassword1"
           placeholder="password"
           value={enteredPassword}
           onChange={passwordChangeHandler}
         />
-      </div>
 
-      <button type="submit" className="btn btn-primary" onClick={submitHandler}>
-        login
-      </button>
-      <button type="submit" className="btn" onClick={resetHandler}>
-        reset
-      </button>
+      <input 
+          type="submit" 
+          className="login" 
+          onClick={submitHandler}
+          value ='login'
+      />
+      <input 
+          type="submit" 
+          className='reset' 
+          onClick={resetHandler}
+          value = 'reset'
+      />
     </form>
   );
 };
