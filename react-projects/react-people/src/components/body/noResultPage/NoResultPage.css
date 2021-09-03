@@ -1,0 +1,20 @@
+.sentiment_neutral {
+    font-size: 70px;
+}
+
+.no-result-icon {
+    font-size: 100px;
+}
+
+.no-result-msg {
+    font-size: 40px;
+}
+
+.no-result {
+    text-align: center;
+    max-width: 400px;
+    margin: auto;
+    color: #696969;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}

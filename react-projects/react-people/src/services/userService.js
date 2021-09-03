@@ -4,3 +4,5 @@ export const getUsers = () => {
             return response.json()
         })
 }
+
+//nedostaje drugi then... obnovi fetch
