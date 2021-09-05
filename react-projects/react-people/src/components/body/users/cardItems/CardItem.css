@@ -1,0 +1,30 @@
+.singleElUserCard {
+    background-color: rgb(202, 221, 212);
+    width: 23%;
+    margin: 10px 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    border-radius: 4px;
+}
+
+.singleElUserCard img {
+    width: 70%;
+}
+
+.singleElUserCard .info {
+    width: 70%;
+}
+
+.singleElUserCard .info p {
+    word-wrap: break-word;    /* sta je ovo */
+}
+
+.red {
+    background-color:rgb(255, 235, 238);
+}
+
+.singleElUserCard:hover{
+    box-shadow: 0 6px 19px rgba(0, 0, 0, 0.3)
+}

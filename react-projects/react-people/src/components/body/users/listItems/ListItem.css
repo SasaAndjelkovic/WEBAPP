@@ -1,0 +1,27 @@
+.singleElUserLIst {
+    background-color: rgb(202, 221, 212);
+    border-radius: 3px;
+    display: flex;    /*  ponoviti */
+    margin: 15px 7%;
+    padding: 3px 2%;
+    flex-grow: 1;
+}
+
+.singleElUserLIst img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin-top: 15px;
+}
+
+.singleElUserLIst .info {
+    margin-left: 9px;
+}
+
+.color {
+    color: black;
+}
+
+.red {
+    background-color: rgb(255, 235, 238);
+}

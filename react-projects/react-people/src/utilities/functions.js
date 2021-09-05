@@ -6,3 +6,5 @@ export const formatDate = dob => {
     let year = new Date (dob).getFullYear();
     return `${day}-${month}-${year}`;
 }
+
+export const redBgColor = gender => gender === 'female' ? 'red' : '';  //proveri sintaksu
