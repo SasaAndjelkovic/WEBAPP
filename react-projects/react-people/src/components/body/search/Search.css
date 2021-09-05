@@ -1,0 +1,22 @@
+.searchColor {
+    color: black;
+}
+
+.search {
+    width: 100%;
+    padding: 5px 11%;
+    display: flex;
+    flex-direction: row;
+}
+
+.search span {
+    color: rgb(160, 160, 160);
+}
+
+.search input {
+    border: none;
+    border-bottom: 1px solid rgb(160, 160, 160);
+    width: 96%;
+}
+
+/* sladja ove ponovo pise od search. Dodaje padding 5px?? */
