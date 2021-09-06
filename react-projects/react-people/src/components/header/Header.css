@@ -1,0 +1,48 @@
+nav {
+    background-color: #ee6e73;
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    padding: 0px 3%;
+}
+
+nav > * {
+    height: 100%;
+    padding: 0px 5px;
+}
+
+nav h1 {
+    color: white;
+    display: block;
+    width: 95%;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav button {
+    background-color: #ee6e73;
+    border: none;
+    height: 100%;
+}
+
+nav button:hover {
+    background-color: rgb(212, 100, 105);
+}
+
+span {
+    color: white;
+}
+
+.title {
+    color: white;
+    font-weight: 500;
+}
+
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: block;
+}
