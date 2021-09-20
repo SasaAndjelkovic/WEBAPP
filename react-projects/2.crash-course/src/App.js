@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import './app.css';
+import Lamp from './Lamp';
+import LightSwitch from './LightSwitch';
 
-function App() {
+const App = () => {
+    //Setovanje
+    //Lamp one state
+  const [isLampOneOn, setIsLampOneOn] = useState(false);
+    //Lamp two state
+  const [isLampTwoOn, setIsLampTwoOn] = useState (true);
+
+    //Hendleri
+  const handleLightSwitchOne = () => setIsLampOneOn(prev => !prev);
+  const handleLightSwithTwo = () => setIsLampTwoOn(prev => !prev);
+
+    //Renderovanje DOMa
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Room>
+      <Lamp lampOn={isLampOneOn} position='left' />   {/* lampOn is prop, object; position is prop */}
+      <Lamp lampOn={isLampTwoOn} positon='right' />
+      <LightSwitch 
+        name='one'
+        callback={handleLightSwitchOne}
+        switchOn={isLampOneOn}
+        position='left'
+      />
+      <LightSwitch
+        name='two'
+        callback={handleLightSwithTwo}
+        switchOn={isLampTwoOn}
+        position='right'
+      />
+    </Room>
   );
 }
 
