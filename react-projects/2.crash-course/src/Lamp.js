@@ -6,8 +6,8 @@ const Wrapper =`
     background: ${props => (props.lampOn ? 'orange' : 'lightgrey')};
     `
 
-const Lamp = ({ lampOn, position }) => (
-    <Wraper lampOn={lampOn} position={position}>
+const Lamp = ({ lampOn, position }) => (   //moglo je da se stavi props
+    <Wraper lampOn={lampOn} position={position}>    {/* props.lampOn i props.position */}
         <div />
     </Wraper>
 )
