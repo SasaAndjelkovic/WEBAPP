@@ -8,11 +8,11 @@ export const calcTime = Time => {
 };
 
 //Convert a number to money formatting - ovu funckciju pogledati posle kursa
-export const converMoney = money => {
+export const convertMoney = money => {
     const formatter = new Intl.NumberFormat('en-US', {
         style: 'currency',
         currency: 'USD',
         minimumFractionDigits: 0,
     });
     return formatter.format(money);
-}
+};
