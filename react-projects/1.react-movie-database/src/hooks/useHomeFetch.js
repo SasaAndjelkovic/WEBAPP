@@ -37,7 +37,7 @@ export const useHomeFetch = () => {
     //Initial render
     useEffect(() => {
         fetchMovies(1)
-    }, [])
+    }, []);
 
     return { state, loading, error }; //state: steta === state
 };
