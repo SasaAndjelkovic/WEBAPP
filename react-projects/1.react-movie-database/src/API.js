@@ -25,7 +25,7 @@ const apiSettings = {
 //     Ključna reč await dovodi do toga da vreme izvršavanja JavaScript -a pauzira vaš kod na ovoj liniji, 
 //     ne dozvoljavajući da se u međuvremenu izvrši dalji kod sve dok poziv funkcije async ne vrati rezultat - 
 //     vrlo korisno ako se naredni kod oslanja na taj rezultat!
-fetchMovie: async movieId => {
+  fetchMovie: async movieId => {
     const endpoint = `${API_URL}movie/${movieId}?api_key=${API_KEY}`;
     return await (await fetch(endpoint)).json();
   },
