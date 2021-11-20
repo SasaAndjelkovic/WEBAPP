@@ -8,6 +8,7 @@ import HeroImage from './HeroImage/index';
 import Grid from './Grid/Index';
 import Thumb from './Thumb/index';
 import Spinner from './Spinner/Index';
+import SearchBar from './SearchBar';
 
 //Hook
 import { useHomeFetch } from '../hooks/useHomeFetch';
@@ -17,7 +18,7 @@ import NoImage from '../images/no_image.jpg';
 
 const Home = () => {
    
-    const { state, loading, error } = useHomeFetch();
+    const { state, loading, error, setSearchTerm } = useHomeFetch();
     console.log(state);
 
      //div
@@ -29,7 +30,8 @@ const Home = () => {
                     title={state.results[0].original_title}
                     text={state.results[0].overview}
                 />
-            ) : null }
+            ) : null}
+            <SearchBar setSearchTerm={setSearchTerm} />
             <Grid header='Popular Movies'>
                 {state.results.map(movie => (
                     //<div key={movie.id}>{movie.title}</div> dok nije uradjena Thumb componenta
