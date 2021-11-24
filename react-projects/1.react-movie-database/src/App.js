@@ -1,7 +1,7 @@
 import React from 'react';
 
 //Routing
-import { BrowseRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 //Components
 import Header from './components/Header';
@@ -10,6 +10,8 @@ import Movie from './components/Movie';
 import NotFound from './components/NotFound';
 
 //styles
+
+
 import { GlobalStyle } from './GlobalStyle';
 
 //primer da ne mora da se koristi JSX
