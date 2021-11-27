@@ -9,14 +9,14 @@ export const Wrapper = styled.div`
     padding: 40px 20px;
     animation: animateMovieInfo 1s;
 
-    @keyframes {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
+   @keyframes animateMovieInfo {
+    from {
+      opacity: 0;
     }
+    to {
+      opacity: 1;
+    }
+  }
 `;
 
 export const Content = styled.div`
@@ -65,7 +65,7 @@ export const Text = styled.div`
     }
 
     h1 {
-        @media screen and (max-width: 768px {
+        @media screen and (max-width: 768px) {
             font-size: var(--fontBig);
         }
     }
