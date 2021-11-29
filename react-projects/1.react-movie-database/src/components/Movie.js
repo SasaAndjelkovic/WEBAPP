@@ -10,6 +10,7 @@ import Grid from './Grid/Index';
 import Spinner from './Spinner/Index';
 import MovieInfo from './MovieInfo';
 import MovieInfoBar from './MovieInfoBar';
+import Actor from './Actor';
 
 //Hook
 import { useMovieFetch } from '../hooks/useMovieFetch';
@@ -34,7 +35,22 @@ const Movie = () => {
             <MovieInfoBar 
                 time={movie.runtime}    
                 budget={movie.budget} 
-                revenue={movie.revenue} />
+                revenue={movie.revenue} 
+            />
+            <Grid header='Actors'>
+                {movie.actors.map(actor => (
+                    <Actor
+                        key={actor.credit.id}
+                        name={actor.name}
+                        character={actor.character}
+                        imageUrl={
+                            actor.profile_path
+                                ? `${IMAGE_BASE_URL}${POSTER_SIZE}${actor.profile_path}`
+                                : NoImage
+                        }
+                    />
+                ))}
+            </Grid>
         </>
     );
 };
