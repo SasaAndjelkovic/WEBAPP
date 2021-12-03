@@ -10,7 +10,6 @@ import { Wrapper } from "./Login.styles";
 
 //Context 
 import { Context } from '../context';
-import { Content } from "./BreadCrumb/BreadCrumb.styles";
 
 const Login = () => {
     const [username, setUsername] = useState('');
