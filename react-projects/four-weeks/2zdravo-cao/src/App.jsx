@@ -8,8 +8,8 @@ const App = () => {
     <Header poruka = {'zdravo again'}  />
       {/* <h1>Cao zdravo u head-u zbog props (bez props postojim ali sam nevidljiv)</h1> */}
     {/* </Header> */}
-    <div className="App">
-      <header className="App-header">
+    <div>
+      <header>
         <p>Zdravo cao van head-a, ne treba props</p>
       </header>
     </div>
