@@ -24,7 +24,7 @@ export const GlobalStyle = createGlobalStyle`
        
        h1 {
            font-size: 2rem;
-           font-weigth: 600;
+           font-weight: 600;
            color: var(--white);
        }
 

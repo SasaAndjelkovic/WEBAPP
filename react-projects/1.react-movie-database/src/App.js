@@ -14,7 +14,6 @@ import Login from './components/Login';
 import UserProvider from './context';
 
 //styles
-
 import { GlobalStyle } from './GlobalStyle';
 
 //primer da ne mora da se koristi JSX
