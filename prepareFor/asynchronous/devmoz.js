@@ -23,7 +23,7 @@ const hello = async() => await Promise.resolve('Hello');
 
 hello().then(console.log);
 
-//6. 
+//6. Nema vise then blokova
 const myFetch = async() => {
     let response = await fetch('coffee.jpg');
 
@@ -49,4 +49,6 @@ myFetch()
 .catch(e => {
     console.log('There has been a problem with your fetch operation:' + e.message)
 });
+
+//7. 
 
