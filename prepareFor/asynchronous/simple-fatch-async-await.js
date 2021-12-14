@@ -1,6 +1,7 @@
 // Call the fetch() method to fetch the image, and store it in a variable
 async function myFetch() {
   //myFetch: async () => { -> zasto ovo ne funkcionise
+  //zato sto treba const myFetch = async() => {}
   let response = await fetch('coffee.jpg');
   // Use a then() block to respond to the promise's successful completion
   // by taking the returned response and running blob() on it to transform it into a blob
