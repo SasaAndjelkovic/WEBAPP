@@ -28,6 +28,7 @@ const myFetch = async() => {
     let response = await fetch('coffee.jpg');
 
     //responce, jedan od WEB API interfejsa, tj. tipa objekata
+    //iznenadjujuce je da fetch() ne daje gresku za URL koji nedostaje. Zato postoji response.ok
     if(!response.ok) {     /* responce property - svojstvo ok je samo za citanje interfejsa Responce, 
         sadrzi Boolean koji navodi da je odgovor bio uspesan (status u opsegu 200-229) ili ne */
         throw new Error('HTTP error! status: ${response.status}');
@@ -37,6 +38,7 @@ const myFetch = async() => {
     
     let myBlob = await response.blob(); /*metoda koja uzima tok odgovora i cita ga do kraja. 
                                          Vraca promise koji se resava Blob-om*/
+    //let movies = await response.json() u nekim primerima postoji i response.json()
 
     let objectURL = URL.createObjectURL(myBlob); //createObjectURL je iz HTML DOM
     let image = document.createElement('img'); //createElement je iz HTML DOM
