@@ -2,8 +2,8 @@ import React, { useContext } from "react";
 import API from '../../API';
 
 //Component
-import Thumb from '../Thumb';
-import Rate from '../Rate';
+import Thumb from '../04Thumb';
+import Rate from '../13Rate';
 
 //Config
 import { IMAGE_BASE_URL, POSTER_SIZE } from "../../config";

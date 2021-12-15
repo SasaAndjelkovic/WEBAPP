@@ -1,15 +1,15 @@
 import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router";
-import API from '../API';
+import API from '../../API';
 
 //Components
-import Button from "./Button";
+import Button from "../07Button";
 
 //Styled
 import { Wrapper } from "./Login.styles";
 
 //Context 
-import { Context } from '../context';
+import { Context } from '../../context';
 
 const Login = () => {
     const [username, setUsername] = useState('');

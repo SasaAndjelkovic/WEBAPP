@@ -4,12 +4,12 @@ import React from 'react';
 import { POSTER_SIZE, BACKDROP_SIZE, IMAGE_BASE_URL } from '../config';
 
 //Components
-import HeroImage from './HeroImage/index';
-import Grid from './Grid/Index';
-import Thumb from './Thumb/index';
-import Spinner from './Spinner/Index';
-import SearchBar from './SearchBar';
-import Button from './Button';
+import HeroImage from './02HeroImage';
+import Grid from './03Grid/Index';
+import Thumb from './04Thumb';
+import Spinner from './05Spinner/Index';
+import SearchBar from './06SearchBar';
+import Button from './07Button';
     
 
 //Hook

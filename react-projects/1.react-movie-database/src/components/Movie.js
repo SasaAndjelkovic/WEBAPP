@@ -5,12 +5,12 @@ import { useParams } from 'react-router';
 import { IMAGE_BASE_URL, POSTER_SIZE } from '../config';
 
 //Components
-import BreadCrumb from './BreadCrumb';
-import Grid from './Grid/Index';
-import Spinner from './Spinner/Index';
-import MovieInfo from './MovieInfo';
-import MovieInfoBar from './MovieInfoBar';
-import Actor from './Actor';
+import BreadCrumb from './08BreadCrumb';
+import Grid from './03Grid/Index';
+import Spinner from './05Spinner/Index';
+import MovieInfo from './09MovieInfo';
+import MovieInfoBar from './12MovieInfoBar';
+import Actor from './10Actor';
 
 //Hook
 import { useMovieFetch } from '../hooks/useMovieFetch';
