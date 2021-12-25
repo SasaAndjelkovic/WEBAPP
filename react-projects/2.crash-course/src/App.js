@@ -1,7 +1,17 @@
 import React, { useState } from 'react';
-import './app.css';
+import styled from 'styled-components';
+
+//Components
 import Lamp from './Lamp';
 import LightSwitch from './LightSwitch';
+
+const Room = styled.div`
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 10px solid black;
+  margin: 0 auto;
+`;
 
 const App = () => {
     //Setovanje
@@ -10,7 +20,7 @@ const App = () => {
     //Lamp two state
   const [isLampTwoOn, setIsLampTwoOn] = useState (true);
 
-    //Hendleri
+    //Hendlerin
   const handleLightSwitchOne = () => setIsLampOneOn(prev => !prev);
   const handleLightSwithTwo = () => setIsLampTwoOn(prev => !prev);
 
