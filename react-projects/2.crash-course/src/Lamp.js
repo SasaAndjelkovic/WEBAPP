@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
     position: absolute;
-    left: ${props => (props.positon === 'left' ? '20px' : '380px')};
+    left: ${props => (props.position === 'left' ? '20px' : '380px')};
     top: 20px;
     background: ${props => (props.lampOn ? 'orange' : 'lightgrey')};
     width: 100px;
@@ -15,6 +15,6 @@ const Lamp = ({ lampOn, position }) => (   //moglo je da se stavi props
     <Wrapper lampOn={lampOn} position={position}>    {/* props.lampOn i props.position */}
         <div />
     </Wrapper>
-)
+);
 
 export default Lamp;

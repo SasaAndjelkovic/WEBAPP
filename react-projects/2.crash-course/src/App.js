@@ -16,13 +16,13 @@ const Room = styled.div`
 const App = () => {
     //Setovanje
     //Lamp one state
-  const [isLampOneOn, setIsLampOneOn] = useState(false);
+  const [isLampOneOn, setIsLampOneOn] = useState (false);
     //Lamp two state
   const [isLampTwoOn, setIsLampTwoOn] = useState (true);
 
     //Hendlerin
   const handleLightSwitchOne = () => setIsLampOneOn(prev => !prev);
-  const handleLightSwithTwo = () => setIsLampTwoOn(prev => !prev);
+  const handleLightSwitchTwo = () => setIsLampTwoOn(prev => !prev);
 
     //Renderovanje DOMa
   return (
@@ -37,7 +37,7 @@ const App = () => {
       />
       <LightSwitch
         name='two'
-        callback={handleLightSwithTwo}
+        callback={handleLightSwitchTwo}
         switchOn={isLampTwoOn}
         position='right'
       />
